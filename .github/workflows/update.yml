@@ -1,0 +1,59 @@
+# Daily: look for a new price list or fuel %, and propose it as a pull request.
+# A price list that fails the quality checks is never published; an issue is opened instead.
+name: Update price lists
+
+on:
+  schedule:
+    - cron: '17 5 * * *' # every day 05:17 UTC
+  workflow_dispatch:
+
+permissions: {}
+
+concurrency:
+  group: update-price-lists
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # push the update branch
+      pull-requests: write # open the pull request
+      issues: write # report a failed update
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+
+      - name: Check sources and parse
+        id: update
+        run: node scripts/update.js --report update-report.md
+
+      - name: Open pull request with the new prices
+        if: steps.update.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@5f6978faf089d4d20b00c7766989d076bb2fc7f1 # v8.1.1
+        with:
+          branch: update/price-lists
+          delete-branch: true
+          add-paths: data/**
+          commit-message: 'data: ${{ steps.update.outputs.title }}'
+          title: '${{ steps.update.outputs.title }}'
+          body-path: update-report.md
+          labels: price-update
+
+      - name: Report a failed update as an issue
+        if: steps.update.outputs.failed == 'true'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TITLE: ${{ steps.update.outputs.title }}
+        run: |
+          gh label create update-failed --color B60205 --description "Automatic price list update failed" --force
+          open=$(gh issue list --label update-failed --state open --json number --jq '.[0].number')
+          if [ -n "$open" ]; then
+            gh issue comment "$open" --body-file update-report.md
+          else
+            gh issue create --title "$TITLE" --label update-failed --body-file update-report.md
+          fi

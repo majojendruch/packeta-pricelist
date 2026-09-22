@@ -1,0 +1,2957 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "id": "sk",
+    "senderCountry": "SK",
+    "publisher": "Packeta Slovakia s.r.o.",
+    "currency": "EUR",
+    "sha256": "f5612320737a9f6c5b93e3fad2f8865ac129e55f90db95fe54173aa31ff6235b",
+    "validFrom": "2026-09-01",
+    "language": "sk"
+  },
+  "services": [
+    {
+      "id": "home:SK:131",
+      "mode": "HOME",
+      "destination": "SK",
+      "carrierCountry": "SK",
+      "carrierIds": [
+        131
+      ],
+      "carrierName": "Packeta Home",
+      "title": "Slovensko: SK Packeta Home HD (ID dopravcu 131)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 1,
+        "max": 1
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 3.6,
+            "zpoint": 4
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 4.15,
+            "zpoint": 4.55
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 4.35,
+            "zpoint": 4.75
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 5.72,
+            "zpoint": 6.12
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 6.85,
+            "zpoint": 7.25
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 1
+          }
+        ],
+        "cardPaymentPct": 1.2
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 120,
+        "maxSumCm": 150,
+        "byWeight": [
+          {
+            "maxKg": 5,
+            "maxSideCm": 60,
+            "maxSumCm": 120
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 120,
+            "maxSumCm": 150
+          }
+        ],
+        "fromSectionDefaults": true
+      },
+      "fees": [
+        {
+          "code": "risk_surcharge",
+          "label": "Rizikový príplatok",
+          "amount": 1.2,
+          "currency": "EUR",
+          "pct": null,
+          "byWeight": null,
+          "note": null,
+          "description": "Cena za zásielku - príplatok za prácu v extrémnych podmienkach, v čase núdzového stavu, mimoriadnej situácie, či obdobných stavoch a situáciách vyhlásených na území SR ako aj v čase pretrvávajúcich negatívnych hospodárskych dôsledkov."
+        }
+      ],
+      "volumetric": null,
+      "notes": [
+        "UPOZORNENIE: Ak podaná zásielka presiahne parametre nadrozmernej zásielky, je Packeta oprávnená podľa vlastného rozhodnutia buď: doručiť zásielku na adresu za cenu prepravy 10,29 € (bez DPH), ku ktorej sú pripočítané ostatné ceny podľa údajov podanej zásielky (napr. Dobierka, mýtny a palivový príplatok) alebo vrátiť zásielku späť odosielateľovi na jeho náklady."
+      ],
+      "page": 13
+    },
+    {
+      "id": "home:DE:13613",
+      "mode": "HOME",
+      "destination": "DE",
+      "carrierCountry": "DE",
+      "carrierIds": [
+        13613
+      ],
+      "carrierName": "Doručenie na adresu",
+      "title": "Nemecko: DE Doručenie na adresu HD (ID dopravcu 13613)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 2,
+        "max": 2
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 6.92,
+            "zpoint": 7.32
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 7.02,
+            "zpoint": 7.42
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 7.82,
+            "zpoint": 8.22
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 8.83,
+            "zpoint": 9.23
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 10.48,
+            "zpoint": 10.88
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 6.2
+          }
+        ],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 25,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          },
+          {
+            "upTo": {
+              "amount": 100,
+              "currency": "EUR"
+            },
+            "fee": 1.3
+          },
+          {
+            "upTo": {
+              "amount": 200,
+              "currency": "EUR"
+            },
+            "fee": 2
+          },
+          {
+            "upTo": {
+              "amount": 400,
+              "currency": "EUR"
+            },
+            "fee": 4
+          },
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 6.5
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "byWeight": [
+          {
+            "maxKg": 10,
+            "maxSideCm": 70
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 120
+          },
+          {
+            "maxKg": 10,
+            "maxSumCm": 120
+          },
+          {
+            "maxKg": 15,
+            "maxSumCm": 150
+          }
+        ],
+        "maxSideCm": 120,
+        "maxSumCm": 150
+      },
+      "fees": [
+        {
+          "code": "special_handling",
+          "label": "Poplatok za osobitné spracovanie zásielky",
+          "amount": 10,
+          "currency": "EUR",
+          "pct": null,
+          "byWeight": null,
+          "note": "vzťahuje sa k dopravcovi Hermes",
+          "description": "Uplatňuje sa k zásielkam, ktoré presahujú max. povolené rozmery dopravcu: 120x60x60 cm a k zásielkam, ktoré nie sú správne zabalené. Za nesprávne zabalené zásielky sa považujú napr. zásielky nezabalené v pevnom (kartónovom) obale, nehranaté zásielky (napr. v tvare valca, trojuholníka, vreca)."
+        },
+        {
+          "code": "delivery_hold",
+          "label": "Poplatok za pozastavenie doručovania zásielky",
+          "amount": 2.5,
+          "currency": "EUR",
+          "pct": null,
+          "byWeight": null,
+          "note": "vzťahuje sa k dopravcovi Hermes",
+          "description": "Uplatňuje sa k zásielkam v prípade, ak odosielateľ požiadal o pozastavenie/prerušenie ich doručovania."
+        },
+        {
+          "code": "island_delivery",
+          "label": "Poplatok za doručovanie na ostrovy",
+          "amount": 8.5,
+          "currency": "EUR",
+          "pct": null,
+          "byWeight": null,
+          "note": "vzťahuje sa k dopravcovi Hermes",
+          "description": "Uplatňuje sa k zásielkam doručovaným na nemecké ostrovy, zoznam PSČ nájdete na našej web stránke."
+        }
+      ],
+      "volumetric": null,
+      "notes": [],
+      "page": 42
+    },
+    {
+      "id": "home:BE:4832",
+      "mode": "HOME",
+      "destination": "BE",
+      "carrierCountry": "BE",
+      "carrierIds": [
+        4832
+      ],
+      "carrierName": "Holandská pošta",
+      "title": "Belgicko: BE Holandská pošta HD (ID dopravcu 4832)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 3,
+        "max": 4
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 0.5,
+          "variant": null,
+          "price": {
+            "depot": 9.25,
+            "zpoint": 9.65
+          }
+        },
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 9.3,
+            "zpoint": 9.7
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 9.35,
+            "zpoint": 9.75
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 9.85,
+            "zpoint": 10.25
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 12.8,
+            "zpoint": 13.2
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 14.85,
+            "zpoint": 15.25
+          }
+        }
+      ],
+      "cod": {
+        "available": false,
+        "max": null,
+        "tiers": [],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 100,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          },
+          {
+            "upTo": {
+              "amount": 200,
+              "currency": "EUR"
+            },
+            "fee": 2.7
+          },
+          {
+            "upTo": {
+              "amount": 400,
+              "currency": "EUR"
+            },
+            "fee": 5.4
+          },
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 9.5
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 70,
+        "maxSumCm": 120
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 14
+    },
+    {
+      "id": "home:HU:3828",
+      "mode": "HOME",
+      "destination": "HU",
+      "carrierCountry": "HU",
+      "carrierIds": [
+        3828
+      ],
+      "carrierName": "Express One",
+      "title": "Maďarsko: HU Express One HD (ID dopravcu 3828)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 2,
+        "max": 2
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 4.54,
+            "zpoint": 4.94
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 4.7,
+            "zpoint": 5.1
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 4.79,
+            "zpoint": 5.19
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 6.22,
+            "zpoint": 6.62
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 6.6,
+            "zpoint": 7
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 220000,
+          "currency": "HUF"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 100000,
+              "currency": "HUF"
+            },
+            "fee": 0.05
+          },
+          {
+            "upTo": {
+              "amount": 160000,
+              "currency": "HUF"
+            },
+            "fee": 0.1
+          },
+          {
+            "upTo": {
+              "amount": 220000,
+              "currency": "HUF"
+            },
+            "fee": 0.1
+          }
+        ],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 220000,
+          "currency": "HUF"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 100000,
+              "currency": "HUF"
+            },
+            "fee": 0,
+            "included": true
+          },
+          {
+            "upTo": {
+              "amount": 160000,
+              "currency": "HUF"
+            },
+            "fee": 1.9
+          },
+          {
+            "upTo": {
+              "amount": 220000,
+              "currency": "HUF"
+            },
+            "fee": 2.6
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "byWeight": [
+          {
+            "maxKg": 10,
+            "maxSideCm": 70
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 120
+          },
+          {
+            "maxKg": 10,
+            "maxSumCm": 120
+          },
+          {
+            "maxKg": 15,
+            "maxSumCm": 150
+          }
+        ],
+        "maxSideCm": 120,
+        "maxSumCm": 150
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 42
+    },
+    {
+      "id": "home:IE:24810",
+      "mode": "HOME",
+      "destination": "IE",
+      "carrierCountry": "IE",
+      "carrierIds": [
+        24810
+      ],
+      "carrierName": "FedEx Connect Plus",
+      "title": "Írsko: IE FedEx Connect Plus HD (ID dopravcu 24810)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 6,
+        "max": 7
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 0.5,
+          "variant": null,
+          "price": {
+            "depot": 16.12,
+            "zpoint": 16.52
+          }
+        },
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 16.22,
+            "zpoint": 16.62
+          }
+        },
+        {
+          "maxKg": 1.5,
+          "variant": null,
+          "price": {
+            "depot": 17.14,
+            "zpoint": 17.54
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 18.13,
+            "zpoint": 18.53
+          }
+        },
+        {
+          "maxKg": 2.5,
+          "variant": null,
+          "price": {
+            "depot": 19.13,
+            "zpoint": 19.53
+          }
+        },
+        {
+          "maxKg": 3,
+          "variant": null,
+          "price": {
+            "depot": 20.17,
+            "zpoint": 20.57
+          }
+        },
+        {
+          "maxKg": 4,
+          "variant": null,
+          "price": {
+            "depot": 21.76,
+            "zpoint": 22.16
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 21.83,
+            "zpoint": 22.23
+          }
+        },
+        {
+          "maxKg": 6,
+          "variant": null,
+          "price": {
+            "depot": 27.44,
+            "zpoint": 27.84
+          }
+        },
+        {
+          "maxKg": 7,
+          "variant": null,
+          "price": {
+            "depot": 27.62,
+            "zpoint": 28.02
+          }
+        },
+        {
+          "maxKg": 8,
+          "variant": null,
+          "price": {
+            "depot": 27.72,
+            "zpoint": 28.12
+          }
+        },
+        {
+          "maxKg": 9,
+          "variant": null,
+          "price": {
+            "depot": 27.82,
+            "zpoint": 28.22
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 27.9,
+            "zpoint": 28.3
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 34.18,
+            "zpoint": 34.58
+          }
+        }
+      ],
+      "cod": {
+        "available": false,
+        "max": null,
+        "tiers": [],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 100,
+              "currency": "EUR"
+            },
+            "fee": 1.4
+          },
+          {
+            "upTo": {
+              "amount": 200,
+              "currency": "EUR"
+            },
+            "fee": 2.8
+          },
+          {
+            "upTo": {
+              "amount": 400,
+              "currency": "EUR"
+            },
+            "fee": 5.6
+          },
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 9.5
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 70,
+        "maxSumCm": 120
+      },
+      "fees": [],
+      "volumetric": {
+        "divisor": 5000
+      },
+      "notes": [
+        "UPOZORNENIE: Dopravca FedEx uplatňuje pri doručovaní prepočet na volumetrickú váhu. Hmotnosť každej zásielky je prepočítaná vzorcom v cm: (šírka x dĺžka x výška) / 5000 = volumetrická hmotnosť. Podľa pravidiel dopravcu je potom fakturovaná vždy tá hmotnosť zásielky, ktorá má vyššiu hodnotu."
+      ],
+      "page": 29
+    },
+    {
+      "id": "packeta_pickup_point:SK:packeta-z-point-pp",
+      "mode": "PACKETA_PICKUP_POINT",
+      "destination": "SK",
+      "carrierCountry": "SK",
+      "carrierIds": [],
+      "carrierName": "Packeta Z-POINT",
+      "title": "Slovensko: SK Packeta Z-POINT PP",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 1,
+        "max": 1
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 2.3,
+            "zpoint": 2.7
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 3.8,
+            "zpoint": 4.2
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 4.3,
+            "zpoint": 4.7
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 1
+          }
+        ],
+        "cardPaymentPct": 1.2
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 120,
+        "maxSumCm": 150,
+        "byWeight": [
+          {
+            "maxKg": 5,
+            "maxSideCm": 60,
+            "maxSumCm": 120
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 120,
+            "maxSumCm": 150
+          }
+        ],
+        "fromSectionDefaults": true
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [
+        "UPOZORNENIE: Ak podaná zásielka presiahne parametre nadrozmernej zásielky, je Packeta oprávnená podľa vlastného rozhodnutia buď: doručiť zásielku do Z-POINTu za cenu prepravy 9,27 € (bez DPH), ku ktorej sú pripočítané ostatné ceny podľa údajov podanej zásielky (napr. Dobierka, mýtny a palivový príplatok) alebo vrátiť zásielku späť odosielateľovi na jeho náklady."
+      ],
+      "page": 7
+    },
+    {
+      "id": "packeta_pickup_point:CZ:packeta-z-point-pp",
+      "mode": "PACKETA_PICKUP_POINT",
+      "destination": "CZ",
+      "carrierCountry": "CZ",
+      "carrierIds": [],
+      "carrierName": "Packeta Z-POINT",
+      "title": "Česko: CZ Packeta Z-POINT PP",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 1,
+        "max": 1
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 2.8,
+            "zpoint": 3.2
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 5.72,
+            "zpoint": 6.12
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 6.22,
+            "zpoint": 6.62
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 20000,
+          "currency": "CZK"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 20000,
+              "currency": "CZK"
+            },
+            "fee": 1
+          }
+        ],
+        "cardPaymentPct": 1.2
+      },
+      "insurance": {
+        "max": {
+          "amount": 20000,
+          "currency": "CZK"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 20000,
+              "currency": "CZK"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 120,
+        "maxSumCm": 150,
+        "byWeight": [
+          {
+            "maxKg": 5,
+            "maxSideCm": 60,
+            "maxSumCm": 120
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 120,
+            "maxSumCm": 150
+          }
+        ],
+        "fromSectionDefaults": true
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [
+        "UPOZORNENIE: Ak podaná zásielka presiahne parametre nadrozmernej zásielky, je Packeta oprávnená podľa vlastného rozhodnutia buď: doručiť zásielku do Z-POINTu za cenu prepravy 11,09 € (bez DPH), ku ktorej sú pripočítané ostatné ceny podľa údajov podanej zásielky (napr. Dobierka, mýtny a palivový príplatok) alebo vrátiť zásielku späť odosielateľovi na jeho náklady."
+      ],
+      "page": 9
+    },
+    {
+      "id": "packeta_pickup_point:HU:packeta-z-point-pp",
+      "mode": "PACKETA_PICKUP_POINT",
+      "destination": "HU",
+      "carrierCountry": "HU",
+      "carrierIds": [],
+      "carrierName": "Packeta Z-POINT",
+      "title": "Maďarsko: HU Packeta Z-POINT PP",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 2,
+        "max": 2
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 2.8,
+            "zpoint": 3.2
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 5.72,
+            "zpoint": 6.12
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 6.22,
+            "zpoint": 6.62
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 220000,
+          "currency": "HUF"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 220000,
+              "currency": "HUF"
+            },
+            "fee": 1
+          }
+        ],
+        "cardPaymentPct": 1.2
+      },
+      "insurance": {
+        "max": {
+          "amount": 220000,
+          "currency": "HUF"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 220000,
+              "currency": "HUF"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 120,
+        "maxSumCm": 150,
+        "byWeight": [
+          {
+            "maxKg": 5,
+            "maxSideCm": 60,
+            "maxSumCm": 120
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 120,
+            "maxSumCm": 150
+          }
+        ],
+        "fromSectionDefaults": true
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 10
+    },
+    {
+      "id": "packeta_box:SK:packeta-z-box-pp",
+      "mode": "PACKETA_BOX",
+      "destination": "SK",
+      "carrierCountry": "SK",
+      "carrierIds": [],
+      "carrierName": "Packeta Z-BOX",
+      "title": "Slovensko: SK Packeta Z-BOX PP",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 1,
+        "max": 1
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 2.3,
+            "zpoint": 2.7
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 3.8,
+            "zpoint": 4.2
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 4.3,
+            "zpoint": 4.7
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 1
+          }
+        ],
+        "cardPaymentPct": 1.2
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 60,
+        "maxSumCm": null,
+        "byWeight": [
+          {
+            "maxKg": 5,
+            "maxSideCm": 60
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 60
+          }
+        ],
+        "sizeCategories": [
+          {
+            "code": "XS",
+            "dimsCm": [
+              7,
+              17,
+              60
+            ]
+          },
+          {
+            "code": "S",
+            "dimsCm": [
+              7,
+              43,
+              60
+            ]
+          },
+          {
+            "code": "XM",
+            "dimsCm": [
+              16,
+              17,
+              60
+            ]
+          },
+          {
+            "code": "M",
+            "dimsCm": [
+              16,
+              43,
+              60
+            ]
+          },
+          {
+            "code": "L",
+            "dimsCm": [
+              35,
+              43,
+              60
+            ]
+          }
+        ],
+        "fromSectionDefaults": true
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [
+        "UPOZORNENIE: Ak podaná zásielka presiahne max. hmotnosť pre nadrozmerné zásielky,je Packeta oprávnená podľa vlastného rozhodnutia buď: doručiť zásielku do Z-POINTu za cenu prepravy 9,27 € (bez DPH), ku ktorej sú pripočítané ostatné ceny podľa údajov podanej zásielky (napr. Dobierka, mýtny a palivový príplatok) alebo vrátiť zásielku späť odosielateľovi na jeho náklady."
+      ],
+      "page": 7
+    },
+    {
+      "id": "packeta_box:CZ:packeta-z-box-pp",
+      "mode": "PACKETA_BOX",
+      "destination": "CZ",
+      "carrierCountry": "CZ",
+      "carrierIds": [],
+      "carrierName": "Packeta Z-BOX",
+      "title": "Česko: CZ Packeta Z-BOX PP",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 1,
+        "max": 1
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 2.8,
+            "zpoint": 3.2
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 5.72,
+            "zpoint": 6.12
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 6.22,
+            "zpoint": 6.62
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 20000,
+          "currency": "CZK"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 20000,
+              "currency": "CZK"
+            },
+            "fee": 1
+          }
+        ],
+        "cardPaymentPct": 1.2
+      },
+      "insurance": {
+        "max": {
+          "amount": 20000,
+          "currency": "CZK"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 20000,
+              "currency": "CZK"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 60,
+        "maxSumCm": null,
+        "byWeight": [
+          {
+            "maxKg": 5,
+            "maxSideCm": 60
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 60
+          }
+        ],
+        "sizeCategories": [
+          {
+            "code": "XS",
+            "dimsCm": [
+              7,
+              17,
+              60
+            ]
+          },
+          {
+            "code": "S",
+            "dimsCm": [
+              7,
+              43,
+              60
+            ]
+          },
+          {
+            "code": "XM",
+            "dimsCm": [
+              16,
+              17,
+              60
+            ]
+          },
+          {
+            "code": "M",
+            "dimsCm": [
+              16,
+              43,
+              60
+            ]
+          },
+          {
+            "code": "L",
+            "dimsCm": [
+              35,
+              43,
+              60
+            ]
+          }
+        ],
+        "fromSectionDefaults": true
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [
+        "UPOZORNENIE: Ak podaná zásielka presiahne max. hmotnosť pre nadrozmerné zásielky, je Packeta oprávnená podľa vlastného rozhodnutia buď: doručiť zásielku do Z-POINTu za cenu prepravy 11,09 € (bez DPH), ku ktorej sú pripočítané ostatné ceny podľa údajov podanej zásielky (napr. Dobierka, mýtny a palivový príplatok) alebo vrátiť zásielku späť odosielateľovi na jeho náklady."
+      ],
+      "page": 8
+    },
+    {
+      "id": "packeta_box:RO:packeta-z-box-pp",
+      "mode": "PACKETA_BOX",
+      "destination": "RO",
+      "carrierCountry": "RO",
+      "carrierIds": [],
+      "carrierName": "Packeta Z-BOX",
+      "title": "Rumunsko: RO Packeta Z-BOX PP",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 2,
+        "max": 2
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 3.3,
+            "zpoint": 3.7
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 6.22,
+            "zpoint": 6.62
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 6.72,
+            "zpoint": 7.12
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 3500,
+          "currency": "RON"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 3500,
+              "currency": "RON"
+            },
+            "fee": 1
+          }
+        ],
+        "cardPaymentPct": 1.2
+      },
+      "insurance": {
+        "max": {
+          "amount": 3500,
+          "currency": "RON"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 3500,
+              "currency": "RON"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 60,
+        "maxSumCm": null,
+        "byWeight": [
+          {
+            "maxKg": 5,
+            "maxSideCm": 60
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 60
+          }
+        ],
+        "sizeCategories": [
+          {
+            "code": "XS",
+            "dimsCm": [
+              7,
+              17,
+              60
+            ]
+          },
+          {
+            "code": "S",
+            "dimsCm": [
+              7,
+              43,
+              60
+            ]
+          },
+          {
+            "code": "XM",
+            "dimsCm": [
+              16,
+              17,
+              60
+            ]
+          },
+          {
+            "code": "M",
+            "dimsCm": [
+              16,
+              43,
+              60
+            ]
+          },
+          {
+            "code": "L",
+            "dimsCm": [
+              35,
+              43,
+              60
+            ]
+          }
+        ],
+        "fromSectionDefaults": true
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 10
+    },
+    {
+      "id": "partner_pickup_point:BE:7910",
+      "mode": "PARTNER_PICKUP_POINT",
+      "destination": "BE",
+      "carrierCountry": "BE",
+      "carrierIds": [
+        7910
+      ],
+      "carrierName": "Belgická pošta",
+      "title": "Belgicko: BE Belgická pošta PP (ID dopravcu 7910)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 3,
+        "max": 4
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 10.93,
+            "zpoint": 11.33
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 11.05,
+            "zpoint": 11.45
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 11.45,
+            "zpoint": 11.85
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 12.85,
+            "zpoint": 13.25
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 13.55,
+            "zpoint": 13.95
+          }
+        }
+      ],
+      "cod": {
+        "available": false,
+        "max": null,
+        "tiers": [],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 500,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          },
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 9.5
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 70,
+        "maxSumCm": 120
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 71
+    },
+    {
+      "id": "partner_pickup_point:FR:12889",
+      "mode": "PARTNER_PICKUP_POINT",
+      "destination": "FR",
+      "carrierCountry": "FR",
+      "carrierIds": [
+        12889
+      ],
+      "carrierName": "Mondial Relay",
+      "title": "Francúzsko: FR Mondial Relay PP (ID dopravcu 12889)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 4,
+        "max": 4
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 6.5,
+            "zpoint": 6.9
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 7.24,
+            "zpoint": 7.64
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 8.34,
+            "zpoint": 8.74
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 11.62,
+            "zpoint": 12.02
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 14.15,
+            "zpoint": 14.55
+          }
+        }
+      ],
+      "cod": {
+        "available": false,
+        "max": null,
+        "tiers": [],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 100,
+              "currency": "EUR"
+            },
+            "fee": 1.3
+          },
+          {
+            "upTo": {
+              "amount": 200,
+              "currency": "EUR"
+            },
+            "fee": 2.6
+          },
+          {
+            "upTo": {
+              "amount": 400,
+              "currency": "EUR"
+            },
+            "fee": 5.2
+          },
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 9.2
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "byWeight": [
+          {
+            "maxKg": 10,
+            "maxSideCm": 70
+          },
+          {
+            "maxKg": 15,
+            "maxSideCm": 120
+          },
+          {
+            "maxKg": 10,
+            "maxSumCm": 120
+          },
+          {
+            "maxKg": 15,
+            "maxSumCm": 150
+          }
+        ],
+        "maxSideCm": 120,
+        "maxSumCm": 150
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 81
+    },
+    {
+      "id": "partner_pickup_point:HR:10619",
+      "mode": "PARTNER_PICKUP_POINT",
+      "destination": "HR",
+      "carrierCountry": "HR",
+      "carrierIds": [
+        10619
+      ],
+      "carrierName": "Overseas Express",
+      "title": "Chorvátsko: HR Overseas Express PP (ID dopravcu 10619)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 3,
+        "max": 4
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 4.19,
+            "zpoint": 4.59
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 4.59,
+            "zpoint": 4.99
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 5.14,
+            "zpoint": 5.54
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 6.59,
+            "zpoint": 6.99
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 7.29,
+            "zpoint": 7.69
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 0.8
+          }
+        ],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 50,
+        "maxSumCm": 120
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 85
+    },
+    {
+      "id": "partner_pickup_point:DE:6828",
+      "mode": "PARTNER_PICKUP_POINT",
+      "destination": "DE",
+      "carrierCountry": "DE",
+      "carrierIds": [
+        6828
+      ],
+      "carrierName": "Hermes",
+      "title": "Nemecko: DE Hermes PP (ID dopravcu 6828)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 4,
+        "max": 4
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 1,
+          "variant": null,
+          "price": {
+            "depot": 5.65,
+            "zpoint": 6.05
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": null,
+          "price": {
+            "depot": 5.75,
+            "zpoint": 6.15
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 6.35,
+            "zpoint": 6.75
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 8.2,
+            "zpoint": 8.6
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 9.95,
+            "zpoint": 10.35
+          }
+        }
+      ],
+      "cod": {
+        "available": false,
+        "max": null,
+        "tiers": [],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 25,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          },
+          {
+            "upTo": {
+              "amount": 100,
+              "currency": "EUR"
+            },
+            "fee": 1.3
+          },
+          {
+            "upTo": {
+              "amount": 200,
+              "currency": "EUR"
+            },
+            "fee": 2
+          },
+          {
+            "upTo": {
+              "amount": 400,
+              "currency": "EUR"
+            },
+            "fee": 4
+          },
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 6.5
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSideCm": 70,
+        "maxSumCm": 120
+      },
+      "fees": [
+        {
+          "code": "special_handling",
+          "label": "Poplatok za osobitné spracovanie zásielky",
+          "amount": 10,
+          "currency": "EUR",
+          "pct": null,
+          "byWeight": null,
+          "note": null,
+          "description": "Uplatňuje sa k zásielkam, ktoré presahujú max. povolené rozmery dopravcu: 120x60x60 cm a k zásielkam, ktoré nie sú správne zabalené. Za nesprávne zabalené zásielky sa považujú napr. zásielky nezabalené v pevnom (kartónovom) obale, nehranaté zásielky (napr. v tvare valca, trojuholníka, vreca)."
+        },
+        {
+          "code": "delivery_hold",
+          "label": "Poplatok za pozastavenie doručovania zásielky",
+          "amount": 2.5,
+          "currency": "EUR",
+          "pct": null,
+          "byWeight": null,
+          "note": null,
+          "description": "Uplatňuje sa k zásielkam v prípade, ak odosielateľ požiadal o pozastavenie/prerušenie ich doručovania."
+        },
+        {
+          "code": "island_delivery",
+          "label": "Poplatok za doručovanie na ostrovy",
+          "amount": 8.5,
+          "currency": "EUR",
+          "pct": null,
+          "byWeight": null,
+          "note": null,
+          "description": "Uplatňuje sa k zásielkam doručovaným na nemecké ostrovy, zoznam PSČ nájdete na našej web stránke."
+        }
+      ],
+      "volumetric": null,
+      "notes": [],
+      "page": 93
+    },
+    {
+      "id": "partner_box:BG:26067",
+      "mode": "PARTNER_BOX",
+      "destination": "BG",
+      "carrierCountry": "BG",
+      "carrierIds": [
+        26067
+      ],
+      "carrierName": "Sameday",
+      "title": "Bulharsko: BG Sameday Box (ID dopravcu 26067)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 3,
+        "max": 3
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 1,
+          "variant": "A",
+          "price": {
+            "depot": 3.45,
+            "zpoint": 3.85
+          }
+        },
+        {
+          "maxKg": 1,
+          "variant": "B",
+          "price": {
+            "depot": 3.55,
+            "zpoint": 3.95
+          }
+        },
+        {
+          "maxKg": 1,
+          "variant": "C",
+          "price": {
+            "depot": 4.75,
+            "zpoint": 5.15
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": "A",
+          "price": {
+            "depot": 3.75,
+            "zpoint": 4.15
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": "B",
+          "price": {
+            "depot": 3.85,
+            "zpoint": 4.25
+          }
+        },
+        {
+          "maxKg": 2,
+          "variant": "C",
+          "price": {
+            "depot": 4.95,
+            "zpoint": 5.35
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": "A",
+          "price": {
+            "depot": 4.55,
+            "zpoint": 4.95
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": "B",
+          "price": {
+            "depot": 4.65,
+            "zpoint": 5.05
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": "C",
+          "price": {
+            "depot": 5.75,
+            "zpoint": 6.15
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": "A",
+          "price": {
+            "depot": 6.4,
+            "zpoint": 6.8
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": "B",
+          "price": {
+            "depot": 6.7,
+            "zpoint": 7.1
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": "C",
+          "price": {
+            "depot": 6.8,
+            "zpoint": 7.2
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": "A",
+          "price": {
+            "depot": 8.25,
+            "zpoint": 8.65
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": "B",
+          "price": {
+            "depot": 8.3,
+            "zpoint": 8.7
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": "C",
+          "price": {
+            "depot": 8.35,
+            "zpoint": 8.75
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 1400,
+          "currency": "BGN"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 50,
+              "currency": "EUR"
+            },
+            "fee": 0.7
+          },
+          {
+            "upTo": {
+              "amount": 100,
+              "currency": "EUR"
+            },
+            "fee": 1.4
+          },
+          {
+            "upTo": {
+              "amount": 200,
+              "currency": "EUR"
+            },
+            "fee": 2.8
+          },
+          {
+            "upTo": {
+              "amount": 400,
+              "currency": "EUR"
+            },
+            "fee": 5.7
+          },
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 10
+          }
+        ],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 1400,
+          "currency": "BGN"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 25,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          },
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "above": {
+              "amount": 25,
+              "currency": "EUR"
+            },
+            "feePct": 0.7
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "sizeCategories": [
+          {
+            "code": "A",
+            "dimsCm": [
+              47,
+              44,
+              10
+            ]
+          },
+          {
+            "code": "B",
+            "dimsCm": [
+              47,
+              44,
+              20
+            ]
+          },
+          {
+            "code": "C",
+            "dimsCm": [
+              47,
+              44,
+              39
+            ]
+          }
+        ]
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 74
+    },
+    {
+      "id": "partner_box:PL:3060",
+      "mode": "PARTNER_BOX",
+      "destination": "PL",
+      "carrierCountry": "PL",
+      "carrierIds": [
+        3060
+      ],
+      "carrierName": "InPost Paczkomaty",
+      "title": "Poľsko: PL InPost Paczkomaty Box (ID dopravcu 3060)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 2,
+        "max": 2
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": "A",
+          "price": {
+            "depot": 4,
+            "zpoint": 4.4
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": "B",
+          "price": {
+            "depot": 5,
+            "zpoint": 5.4
+          }
+        },
+        {
+          "maxKg": 5,
+          "variant": "C",
+          "price": {
+            "depot": 5.1,
+            "zpoint": 5.5
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": "A",
+          "price": {
+            "depot": 5.55,
+            "zpoint": 5.95
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": "B",
+          "price": {
+            "depot": 5.6,
+            "zpoint": 6
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": "C",
+          "price": {
+            "depot": 5.65,
+            "zpoint": 6.05
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": "A",
+          "price": {
+            "depot": 5.7,
+            "zpoint": 6.1
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": "B",
+          "price": {
+            "depot": 5.75,
+            "zpoint": 6.15
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": "C",
+          "price": {
+            "depot": 5.8,
+            "zpoint": 6.2
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 3000,
+          "currency": "PLN"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 3000,
+              "currency": "PLN"
+            },
+            "fee": 0.45
+          }
+        ],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 3000,
+          "currency": "PLN"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 3000,
+              "currency": "PLN"
+            },
+            "fee": 0.1
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "sizeCategories": [
+          {
+            "code": "A",
+            "dimsCm": [
+              8,
+              38,
+              64
+            ]
+          },
+          {
+            "code": "B",
+            "dimsCm": [
+              19,
+              38,
+              64
+            ]
+          },
+          {
+            "code": "C",
+            "dimsCm": [
+              41,
+              38,
+              64
+            ]
+          }
+        ]
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 94
+    },
+    {
+      "id": "partner_box:HU:32970",
+      "mode": "PARTNER_BOX",
+      "destination": "HU",
+      "carrierCountry": "HU",
+      "carrierIds": [
+        32970
+      ],
+      "carrierName": "FoxPost",
+      "title": "Maďarsko: HU FoxPost Box (ID dopravcu 32970)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 2,
+        "max": 3
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 2.8,
+            "zpoint": 3.2
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 5.72,
+            "zpoint": 6.12
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 6.22,
+            "zpoint": 6.62
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 220000,
+          "currency": "HUF"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 220000,
+              "currency": "HUF"
+            },
+            "fee": 1
+          }
+        ],
+        "cardPaymentPct": 1.2
+      },
+      "insurance": {
+        "max": {
+          "amount": 220000,
+          "currency": "HUF"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 220000,
+              "currency": "HUF"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "minDimsCm": [
+          10,
+          7,
+          1
+        ],
+        "maxSumCm": null
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [
+        "UPOZORNENIE: Dopravca umožňuje úhradu dobierky výlučne platobnou kartou."
+      ],
+      "page": 92
+    },
+    {
+      "id": "partner_box:GR:20409",
+      "mode": "PARTNER_BOX",
+      "destination": "GR",
+      "carrierCountry": "GR",
+      "carrierIds": [
+        20409
+      ],
+      "carrierName": "BoxNow",
+      "title": "Grécko: GR BoxNow Box (ID dopravcu 20409)",
+      "variant": null,
+      "suspended": false,
+      "leadTimeDays": {
+        "min": 4,
+        "max": 4
+      },
+      "currency": "EUR",
+      "tiers": [
+        {
+          "maxKg": 5,
+          "variant": null,
+          "price": {
+            "depot": 4.4,
+            "zpoint": 4.8
+          }
+        },
+        {
+          "maxKg": 10,
+          "variant": null,
+          "price": {
+            "depot": 4.5,
+            "zpoint": 4.9
+          }
+        },
+        {
+          "maxKg": 15,
+          "variant": null,
+          "price": {
+            "depot": 4.55,
+            "zpoint": 4.95
+          }
+        }
+      ],
+      "cod": {
+        "available": true,
+        "max": {
+          "amount": 400,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 400,
+              "currency": "EUR"
+            },
+            "fee": 0.75
+          }
+        ],
+        "cardPaymentPct": null
+      },
+      "insurance": {
+        "max": {
+          "amount": 700,
+          "currency": "EUR"
+        },
+        "tiers": [
+          {
+            "upTo": {
+              "amount": 700,
+              "currency": "EUR"
+            },
+            "fee": 0,
+            "included": true
+          }
+        ]
+      },
+      "limits": {
+        "maxWeightKg": 15,
+        "byWeight": [
+          {
+            "maxKg": 5,
+            "maxDimsCm": [
+              61,
+              45,
+              36
+            ]
+          },
+          {
+            "maxKg": 15,
+            "maxDimsCm": [
+              62,
+              45,
+              36
+            ]
+          }
+        ]
+      },
+      "fees": [],
+      "volumetric": null,
+      "notes": [],
+      "page": 83
+    }
+  ],
+  "returns": {
+    "limits": {
+      "maxWeightKg": 15,
+      "minDimsCm": [
+        10,
+        7,
+        1
+      ],
+      "maxSideCm": 120,
+      "maxSumCm": 150
+    },
+    "prices": [
+      {
+        "fromCountry": "SK",
+        "price": 2.3,
+        "currency": "EUR"
+      },
+      {
+        "fromCountry": "CZ",
+        "price": 2.8,
+        "currency": "EUR"
+      },
+      {
+        "fromCountry": "HU",
+        "price": 2.8,
+        "currency": "EUR"
+      },
+      {
+        "fromCountry": "PL",
+        "price": 4.7,
+        "currency": "EUR"
+      },
+      {
+        "fromCountry": "AT",
+        "price": 5.23,
+        "currency": "EUR"
+      }
+    ]
+  },
+  "surcharges": {
+    "fuel": {
+      "currentPct": null,
+      "month": null,
+      "sourceUrl": null,
+      "basis": "base-price",
+      "dieselTable": [
+        {
+          "fromEurPer1000l": 0,
+          "toEurPer1000l": 640,
+          "pct": 0
+        },
+        {
+          "fromEurPer1000l": 640,
+          "toEurPer1000l": 680,
+          "pct": 0.5
+        },
+        {
+          "fromEurPer1000l": 680,
+          "toEurPer1000l": 720,
+          "pct": 1
+        },
+        {
+          "fromEurPer1000l": 720,
+          "toEurPer1000l": 760,
+          "pct": 1.5
+        },
+        {
+          "fromEurPer1000l": 760,
+          "toEurPer1000l": 800,
+          "pct": 2
+        },
+        {
+          "fromEurPer1000l": 800,
+          "toEurPer1000l": 840,
+          "pct": 2.5
+        },
+        {
+          "fromEurPer1000l": 840,
+          "toEurPer1000l": 880,
+          "pct": 3
+        },
+        {
+          "fromEurPer1000l": 880,
+          "toEurPer1000l": 920,
+          "pct": 3.5
+        },
+        {
+          "fromEurPer1000l": 920,
+          "toEurPer1000l": 960,
+          "pct": 4
+        },
+        {
+          "fromEurPer1000l": 960,
+          "toEurPer1000l": 1000,
+          "pct": 4.5
+        },
+        {
+          "fromEurPer1000l": 1000,
+          "toEurPer1000l": 1040,
+          "pct": 5
+        },
+        {
+          "fromEurPer1000l": 1040,
+          "toEurPer1000l": 1080,
+          "pct": 5.5
+        },
+        {
+          "fromEurPer1000l": 1080,
+          "toEurPer1000l": 1120,
+          "pct": 6
+        },
+        {
+          "fromEurPer1000l": 1120,
+          "toEurPer1000l": 1160,
+          "pct": 6.5
+        },
+        {
+          "fromEurPer1000l": 1160,
+          "toEurPer1000l": 1200,
+          "pct": 7
+        },
+        {
+          "fromEurPer1000l": 1200,
+          "toEurPer1000l": 1240,
+          "pct": 7.5
+        },
+        {
+          "fromEurPer1000l": 1240,
+          "toEurPer1000l": 1280,
+          "pct": 8
+        },
+        {
+          "fromEurPer1000l": 1280,
+          "toEurPer1000l": 1320,
+          "pct": 8.5
+        },
+        {
+          "fromEurPer1000l": 1320,
+          "toEurPer1000l": 1360,
+          "pct": 9
+        },
+        {
+          "fromEurPer1000l": 1360,
+          "toEurPer1000l": 1400,
+          "pct": 9.5
+        },
+        {
+          "fromEurPer1000l": 1400,
+          "toEurPer1000l": 1440,
+          "pct": 10
+        },
+        {
+          "fromEurPer1000l": 1440,
+          "toEurPer1000l": 1480,
+          "pct": 10.5
+        },
+        {
+          "fromEurPer1000l": 1480,
+          "toEurPer1000l": 1520,
+          "pct": 11
+        },
+        {
+          "fromEurPer1000l": 1520,
+          "toEurPer1000l": 1560,
+          "pct": 11.5
+        },
+        {
+          "fromEurPer1000l": 1560,
+          "toEurPer1000l": 1600,
+          "pct": 12
+        }
+      ],
+      "above": {
+        "fromEurPer1000l": 1600,
+        "stepPct": 0.5,
+        "perEur": 40
+      }
+    },
+    "toll": {
+      "perStartedKg": 0.04,
+      "currency": "EUR"
+    },
+    "notes": "Palivový príplatok je kalkulovaný z odmeny za prepravu zásielky (zo základnej ceny doručenia zásielky podľa tohto cenníka) bez DPH a vo faktúre je uvedený oddelene. Východisková cena nafty, na základe ktorej sa určuje percento pre výpočet palivového príplatku je stanovená ako priemerná mesačná ceny nafty, vrátane cla a daní z priemerných cien vykazovaných týždenne pre skupinu krajín eurozóny (EA-20) v ropnom bulletine Oil Bulletin vydávanom Európskou komisiou pre energetiku a dopravu. Podrobnejšie informácie o aktuálne platnej priemernej cene nafty a % palivového príplatku pre daný kalendárny mesiac nájdete na našej Palivový príplatok je pripočítaný k odmene za prepravu zásielky s doručením: na výdajné miesto Packety (Z-POINT / Z-BOX), do boxu dopravcu HU FoxPost Box (ID 32970) a na adresu prostredníctvom ktoréhokoľvek dopravcu Packety alebo Zásilkovny; u zásielok s doručením na adresu alebo do PICK-UP-POINTu prostredníctvom iného subdodávateľa je palivový príplatok započítaný v cene zásielky. Mýtny príplatok je pripočítaný k odmene za prepravu zásielky s doručením: na výdajné miesto Packety (Z-POINT / Z-BOX), do boxu dopravcu HU FoxPost Box (ID 32970) a na adresu prostredníctvom ktoréhokoľvek dopravcu Packety alebo Zásilkovny; u zásielok s doručením na adresu alebo do PICK-UP-POINTu prostredníctvom iného subdodávateľa je palivový príplatok započítaný v cene zásielky."
+  },
+  "fees": [
+    {
+      "code": "zpoint_handin",
+      "label": "Podaj zásielky na Z-POINTe (účtuje sa k cene zásielky pri podaji na depe, ak je skutočným Miestom odoslania Zásielky ktorýkoľvek Z-POINT v rámci Slovenska)",
+      "amount": 0.4,
+      "currency": "EUR",
+      "unit": null
+    },
+    {
+      "code": "relabelling",
+      "label": "Preštítkovanie zásielky - chybný štítok, chybná priama tlač štítkov",
+      "amount": 0.5,
+      "currency": "EUR",
+      "unit": "cena za 1 zásielku"
+    },
+    {
+      "code": "age_verification",
+      "label": "Overenie veku 18 + (službu je možné využiť k zásielkam adresovaným na Z-POINTy v SK, CZ, HU a RO a na adresu v rámci SK a CZ)",
+      "amount": 1,
+      "currency": "EUR",
+      "unit": null
+    },
+    {
+      "code": "storage_per_day",
+      "label": "Skladovanie Nedoručenej zásielky alebo Vratky",
+      "amount": 0.5,
+      "currency": "EUR",
+      "unit": "cena za 1 deň"
+    },
+    {
+      "code": "non_system_parcel",
+      "label": "Nesystémová zásielka",
+      "amount": 5,
+      "currency": "EUR",
+      "unit": null
+    },
+    {
+      "code": "nonconforming_parcel",
+      "label": "Zásielka nespĺňajúca parametre podľa bodu 5.1. VOP alebo je vylúčená z prepravy podľa bodu 5.2. VOP",
+      "amount": 40,
+      "currency": "EUR",
+      "unit": "cena za 1 zásielku"
+    },
+    {
+      "code": "outdated_pickup_point_list",
+      "label": "Neaktuálny zoznam výdajných miest",
+      "amount": 40,
+      "currency": "EUR",
+      "unit": "cena za každé zistené porušenie"
+    },
+    {
+      "code": "customs_declaration",
+      "label": "Zastupovanie v colnom konaní",
+      "amount": 5,
+      "currency": "EUR",
+      "unit": "cena za vystavenie 1 dokladu vrátane 1 položky"
+    },
+    {
+      "code": "customs_extra_item",
+      "label": "Zastupovanie v colnom konaní",
+      "amount": 1.2,
+      "currency": "EUR",
+      "unit": "cena za každú ďalšiu položku"
+    },
+    {
+      "code": "customs_destruction",
+      "label": "Zastupovanie v colnom konaní (zničenie zásielky pod colným dohľadom)",
+      "amount": 20,
+      "currency": "EUR",
+      "unit": null
+    },
+    {
+      "code": "customs_return_transit",
+      "label": "Zastupovanie v colnom konaní (tranzit vrátenia zásielky na vlastné preclenie)",
+      "amount": 14,
+      "currency": "EUR",
+      "unit": null
+    }
+  ],
+  "penalties": [
+    {
+      "code": "excluded_goods",
+      "label": "Zásielka vylúčená z prepravy podľa bodu 5.2., ods. i) VOP",
+      "amount": 10300,
+      "currency": "EUR",
+      "unit": "cena za 1 zásielku"
+    },
+    {
+      "code": "unsolicited_parcel",
+      "label": "Nevyžiadaná zásielka (odosielateľ nepredložil dôkaz o tom, že si ju príjemca objednal) podľa bodu 5.8. VOP",
+      "amount": 50,
+      "currency": "EUR",
+      "unit": "cena za 1 zásielku"
+    },
+    {
+      "code": "late_payment_first",
+      "label": "Prvé omeškanie s úhradou faktúry podľa bodu 10.12. VOP",
+      "amount": 250,
+      "currency": "EUR",
+      "unit": "cena za 1 faktúru"
+    },
+    {
+      "code": "late_payment_repeat",
+      "label": "Každé ďalšie omeškanie s úhradou faktúry podľa bodu 10.12. VOP",
+      "amount": 500,
+      "currency": "EUR",
+      "unit": "cena za 1 faktúru"
+    },
+    {
+      "code": "unapproved_third_party_first",
+      "label": "Prvé zistené použitie neodsúhlasenej Tretej strany pod bodu 4.3. VOP",
+      "amount": 2000,
+      "currency": "EUR",
+      "unit": null
+    },
+    {
+      "code": "unapproved_third_party_repeat",
+      "label": "Každé ďalšie zistené použitie neodsúhlasenej Tretej strany podľa bodu 4.3. VOP",
+      "amount": 5000,
+      "currency": "EUR",
+      "unit": null
+    },
+    {
+      "code": "special_price_misuse",
+      "label": "Neoprávnené využitie osobitných cien neodsúhlasenou Treťou stranou podľa bodu 4.3. VOP",
+      "amount": 3000,
+      "currency": "EUR",
+      "unit": null
+    },
+    {
+      "code": "billing_cooperation_failure",
+      "label": "Neposkytnutie požadovanej súčinnosti nevyhnutnej pre fakturáciu podľa bodu 10.10. VOP",
+      "amount": 250,
+      "currency": "EUR",
+      "unit": null
+    }
+  ]
+}

@@ -1,0 +1,243 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://majojendruch.github.io/packeta-pricelist/v1/schema/pricelist.schema.json",
+  "title": "PriceList v1",
+  "description": "One Packeta / Zásilkovna price list PDF, converted to data. All prices exclude VAT. Unofficial; the source PDF is authoritative. v1 only ever gains optional fields; breaking changes go to v2.",
+  "type": "object",
+  "required": ["schemaVersion", "source", "services", "returns", "surcharges", "fees", "penalties"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "source": {
+      "type": "object",
+      "required": ["id", "validFrom", "language"],
+      "properties": {
+        "id": { "type": "string", "description": "Source id from the registry, e.g. \"sk\" or \"cz\"." },
+        "senderCountry": { "$ref": "#/$defs/iso2" },
+        "publisher": { "type": "string" },
+        "currency": { "$ref": "#/$defs/currency", "description": "Currency the prices are billed in." },
+        "language": { "type": "string" },
+        "validFrom": { "type": "string", "format": "date" },
+        "url": { "type": "string", "format": "uri" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "etag": { "type": "string" },
+        "fetchedAt": { "type": "string", "format": "date-time" }
+      }
+    },
+    "services": { "type": "array", "items": { "$ref": "#/$defs/service" } },
+    "returns": {
+      "type": "object",
+      "required": ["prices"],
+      "properties": {
+        "limits": { "$ref": "#/$defs/limits" },
+        "prices": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["fromCountry", "price", "currency"],
+            "properties": {
+              "fromCountry": { "$ref": "#/$defs/iso2" },
+              "price": { "$ref": "#/$defs/amount" },
+              "currency": { "$ref": "#/$defs/currency" }
+            }
+          }
+        }
+      }
+    },
+    "surcharges": {
+      "type": "object",
+      "required": ["fuel", "toll"],
+      "properties": {
+        "fuel": {
+          "type": "object",
+          "required": ["currentPct", "dieselTable"],
+          "properties": {
+            "currentPct": { "type": ["number", "null"], "description": "Fuel surcharge % for the current month (from the pricing web page). Applied to the base delivery price." },
+            "month": { "type": ["string", "null"], "pattern": "^\\d{4}-\\d{2}$" },
+            "sourceUrl": { "type": ["string", "null"] },
+            "basis": { "const": "base-price" },
+            "dieselTable": {
+              "type": "array",
+              "items": {
+                "type": "object",
+                "required": ["fromEurPer1000l", "toEurPer1000l", "pct"],
+                "properties": {
+                  "fromEurPer1000l": { "type": "number" },
+                  "toEurPer1000l": { "type": "number" },
+                  "pct": { "type": "number" }
+                }
+              }
+            },
+            "above": {
+              "type": ["object", "null"],
+              "properties": { "fromEurPer1000l": { "type": "number" }, "stepPct": { "type": "number" }, "perEur": { "type": "number" } }
+            }
+          }
+        },
+        "toll": {
+          "type": ["object", "null"],
+          "required": ["perStartedKg", "currency"],
+          "properties": { "perStartedKg": { "$ref": "#/$defs/amount" }, "currency": { "$ref": "#/$defs/currency" } }
+        },
+        "notes": { "type": ["string", "null"] }
+      }
+    },
+    "fees": { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    "penalties": { "type": "array", "items": { "$ref": "#/$defs/item" } },
+    "warnings": { "type": "array", "items": { "type": "string" } }
+  },
+  "$defs": {
+    "iso2": { "type": "string", "pattern": "^[A-Z]{2}$" },
+    "currency": { "type": "string", "pattern": "^[A-Z]{3}$" },
+    "amount": { "type": "number", "minimum": 0 },
+    "money": {
+      "type": "object",
+      "required": ["amount", "currency"],
+      "properties": { "amount": { "$ref": "#/$defs/amount" }, "currency": { "$ref": "#/$defs/currency" } }
+    },
+    "mode": {
+      "enum": ["PACKETA_PICKUP_POINT", "PACKETA_BOX", "HOME", "PARTNER_PICKUP_POINT", "PARTNER_BOX"],
+      "description": "PACKETA_* = Packeta's own Z-POINTs / Z-BOXes; HOME = courier to the address; PARTNER_* = pickup points / lockers of partner carriers."
+    },
+    "service": {
+      "type": "object",
+      "required": ["id", "mode", "destination", "carrierIds", "carrierName", "title", "suspended", "currency", "tiers", "cod", "insurance", "limits", "fees"],
+      "properties": {
+        "id": { "type": "string", "description": "Stable id: <mode>:<destination>:<carrier ids or name slug>." },
+        "mode": { "$ref": "#/$defs/mode" },
+        "destination": { "$ref": "#/$defs/iso2", "description": "Country the parcel is delivered to." },
+        "carrierCountry": { "$ref": "#/$defs/iso2" },
+        "carrierIds": { "type": "array", "items": { "type": "integer" }, "description": "Packeta carrier ids (\"ID dopravcu\"), the same ids the Packeta API uses. Empty for Packeta's own pickup points." },
+        "carrierName": { "type": "string" },
+        "title": { "type": "string", "description": "Heading exactly as in the PDF." },
+        "variant": { "type": ["string", "null"] },
+        "suspended": { "type": "boolean", "description": "Delivery currently suspended by Packeta." },
+        "leadTimeDays": {
+          "type": ["object", "null"],
+          "properties": { "min": { "type": "integer" }, "max": { "type": "integer" } }
+        },
+        "currency": { "$ref": "#/$defs/currency" },
+        "tiers": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": ["maxKg", "price"],
+            "properties": {
+              "maxKg": { "type": "number", "exclusiveMinimum": 0 },
+              "variant": { "type": ["string", "null"], "description": "Size category or class, e.g. \"A\", \"M\", \"small\"." },
+              "price": {
+                "type": "object",
+                "required": ["depot"],
+                "properties": {
+                  "depot": { "$ref": "#/$defs/amount", "description": "Price when handed in at a Packeta depot." },
+                  "zpoint": { "$ref": "#/$defs/amount", "description": "Price when handed in at a Z-POINT." }
+                }
+              }
+            }
+          }
+        },
+        "cod": {
+          "type": "object",
+          "required": ["available", "tiers"],
+          "properties": {
+            "available": { "type": "boolean" },
+            "max": { "oneOf": [{ "$ref": "#/$defs/money" }, { "type": "null" }] },
+            "tiers": { "type": "array", "items": { "$ref": "#/$defs/valueTier" } },
+            "cardPaymentPct": { "type": ["number", "null"] },
+            "cardPayment": { "type": "boolean" }
+          }
+        },
+        "insurance": {
+          "type": "object",
+          "required": ["tiers"],
+          "properties": {
+            "max": { "oneOf": [{ "$ref": "#/$defs/money" }, { "type": "null" }] },
+            "tiers": { "type": "array", "items": { "$ref": "#/$defs/valueTier" } }
+          }
+        },
+        "limits": { "$ref": "#/$defs/limits" },
+        "fees": { "type": "array", "items": { "$ref": "#/$defs/serviceFee" } },
+        "volumetric": {
+          "type": ["object", "null"],
+          "properties": { "divisor": { "type": "integer", "description": "Volumetric kg = L×W×H (cm) / divisor; the higher of real and volumetric weight is billed." } }
+        },
+        "notes": { "type": "array", "items": { "type": "string" } },
+        "page": { "type": ["integer", "null"], "description": "PDF page where the service starts." }
+      }
+    },
+    "valueTier": {
+      "type": "object",
+      "required": ["upTo"],
+      "properties": {
+        "upTo": { "$ref": "#/$defs/money", "description": "Tier applies up to this COD amount / insured value (incl. VAT)." },
+        "above": { "$ref": "#/$defs/money" },
+        "fee": { "$ref": "#/$defs/amount" },
+        "feePct": { "type": "number" },
+        "included": { "type": "boolean", "description": "Included in the delivery price." },
+        "supplementary": { "type": "boolean", "description": "Optional extra insurance on top of the included one." },
+        "text": { "type": "string" }
+      }
+    },
+    "limits": {
+      "type": "object",
+      "properties": {
+        "maxWeightKg": { "type": ["number", "null"] },
+        "minDimsCm": { "type": ["array", "null"], "items": { "type": "number" }, "minItems": 3, "maxItems": 3 },
+        "maxSideCm": { "type": ["number", "null"] },
+        "maxSumCm": { "type": ["number", "null"], "description": "Max sum of all three sides." },
+        "byWeight": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["maxKg"],
+            "properties": {
+              "maxKg": { "type": ["number", "null"] },
+              "maxSideCm": { "type": ["number", "null"] },
+              "maxSumCm": { "type": ["number", "null"] },
+              "maxDimsCm": { "type": ["array", "null"], "items": { "type": "number" } }
+            }
+          }
+        },
+        "sizeCategories": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["code", "dimsCm"],
+            "properties": { "code": { "type": "string" }, "dimsCm": { "type": ["array", "null"], "items": { "type": "number" } } }
+          }
+        },
+        "fromSectionDefaults": { "type": "boolean", "description": "Limits come from the section's general table, not the service's own." }
+      }
+    },
+    "serviceFee": {
+      "type": "object",
+      "required": ["code", "label"],
+      "properties": {
+        "code": { "type": "string", "description": "Stable code for known fees (e.g. air_surcharge, signature, special_handling); otherwise a slug of the label." },
+        "label": { "type": "string" },
+        "amount": { "type": ["number", "null"] },
+        "currency": { "type": ["string", "null"] },
+        "pct": { "type": ["number", "null"] },
+        "included": { "type": "boolean" },
+        "byWeight": {
+          "type": ["array", "null"],
+          "items": { "type": "object", "required": ["maxKg", "amount"], "properties": { "maxKg": { "type": "number" }, "amount": { "type": "number" } } }
+        },
+        "note": { "type": ["string", "null"] },
+        "description": { "type": ["string", "null"] }
+      }
+    },
+    "item": {
+      "type": "object",
+      "required": ["code", "label", "amount", "currency"],
+      "properties": {
+        "code": { "type": "string" },
+        "label": { "type": "string" },
+        "amount": { "$ref": "#/$defs/amount" },
+        "currency": { "$ref": "#/$defs/currency" },
+        "unit": { "type": ["string", "null"] },
+        "appliesTo": { "type": "array", "items": { "$ref": "#/$defs/mode" }, "description": "Only these delivery modes; absent = all." }
+      }
+    }
+  }
+}

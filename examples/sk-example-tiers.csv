@@ -1,0 +1,104 @@
+﻿service_id;mode;destination;carrier;carrier_ids;variant;max_kg;tier_variant;price_depot;price_zpoint;currency;lead_days_min;lead_days_max;cod_max;insurance_max;suspended
+home:SK:131;HOME;SK;Packeta Home;131;;1;;3.6;4;EUR;1;1;700 EUR;700 EUR;no
+home:SK:131;HOME;SK;Packeta Home;131;;2;;4.15;4.55;EUR;1;1;700 EUR;700 EUR;no
+home:SK:131;HOME;SK;Packeta Home;131;;5;;4.35;4.75;EUR;1;1;700 EUR;700 EUR;no
+home:SK:131;HOME;SK;Packeta Home;131;;10;;5.72;6.12;EUR;1;1;700 EUR;700 EUR;no
+home:SK:131;HOME;SK;Packeta Home;131;;15;;6.85;7.25;EUR;1;1;700 EUR;700 EUR;no
+home:DE:13613;HOME;DE;Doručenie na adresu;13613;;1;;6.92;7.32;EUR;2;2;700 EUR;700 EUR;no
+home:DE:13613;HOME;DE;Doručenie na adresu;13613;;2;;7.02;7.42;EUR;2;2;700 EUR;700 EUR;no
+home:DE:13613;HOME;DE;Doručenie na adresu;13613;;5;;7.82;8.22;EUR;2;2;700 EUR;700 EUR;no
+home:DE:13613;HOME;DE;Doručenie na adresu;13613;;10;;8.83;9.23;EUR;2;2;700 EUR;700 EUR;no
+home:DE:13613;HOME;DE;Doručenie na adresu;13613;;15;;10.48;10.88;EUR;2;2;700 EUR;700 EUR;no
+home:BE:4832;HOME;BE;Holandská pošta;4832;;0.5;;9.25;9.65;EUR;3;4;not offered;700 EUR;no
+home:BE:4832;HOME;BE;Holandská pošta;4832;;1;;9.3;9.7;EUR;3;4;not offered;700 EUR;no
+home:BE:4832;HOME;BE;Holandská pošta;4832;;2;;9.35;9.75;EUR;3;4;not offered;700 EUR;no
+home:BE:4832;HOME;BE;Holandská pošta;4832;;5;;9.85;10.25;EUR;3;4;not offered;700 EUR;no
+home:BE:4832;HOME;BE;Holandská pošta;4832;;10;;12.8;13.2;EUR;3;4;not offered;700 EUR;no
+home:BE:4832;HOME;BE;Holandská pošta;4832;;15;;14.85;15.25;EUR;3;4;not offered;700 EUR;no
+home:HU:3828;HOME;HU;Express One;3828;;1;;4.54;4.94;EUR;2;2;220000 HUF;220000 HUF;no
+home:HU:3828;HOME;HU;Express One;3828;;2;;4.7;5.1;EUR;2;2;220000 HUF;220000 HUF;no
+home:HU:3828;HOME;HU;Express One;3828;;5;;4.79;5.19;EUR;2;2;220000 HUF;220000 HUF;no
+home:HU:3828;HOME;HU;Express One;3828;;10;;6.22;6.62;EUR;2;2;220000 HUF;220000 HUF;no
+home:HU:3828;HOME;HU;Express One;3828;;15;;6.6;7;EUR;2;2;220000 HUF;220000 HUF;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;0.5;;16.12;16.52;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;1;;16.22;16.62;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;1.5;;17.14;17.54;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;2;;18.13;18.53;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;2.5;;19.13;19.53;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;3;;20.17;20.57;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;4;;21.76;22.16;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;5;;21.83;22.23;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;6;;27.44;27.84;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;7;;27.62;28.02;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;8;;27.72;28.12;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;9;;27.82;28.22;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;10;;27.9;28.3;EUR;6;7;not offered;700 EUR;no
+home:IE:24810;HOME;IE;FedEx Connect Plus;24810;;15;;34.18;34.58;EUR;6;7;not offered;700 EUR;no
+packeta_pickup_point:SK:packeta-z-point-pp;PACKETA_PICKUP_POINT;SK;Packeta Z-POINT;;;5;;2.3;2.7;EUR;1;1;700 EUR;700 EUR;no
+packeta_pickup_point:SK:packeta-z-point-pp;PACKETA_PICKUP_POINT;SK;Packeta Z-POINT;;;10;;3.8;4.2;EUR;1;1;700 EUR;700 EUR;no
+packeta_pickup_point:SK:packeta-z-point-pp;PACKETA_PICKUP_POINT;SK;Packeta Z-POINT;;;15;;4.3;4.7;EUR;1;1;700 EUR;700 EUR;no
+packeta_pickup_point:CZ:packeta-z-point-pp;PACKETA_PICKUP_POINT;CZ;Packeta Z-POINT;;;5;;2.8;3.2;EUR;1;1;20000 CZK;20000 CZK;no
+packeta_pickup_point:CZ:packeta-z-point-pp;PACKETA_PICKUP_POINT;CZ;Packeta Z-POINT;;;10;;5.72;6.12;EUR;1;1;20000 CZK;20000 CZK;no
+packeta_pickup_point:CZ:packeta-z-point-pp;PACKETA_PICKUP_POINT;CZ;Packeta Z-POINT;;;15;;6.22;6.62;EUR;1;1;20000 CZK;20000 CZK;no
+packeta_pickup_point:HU:packeta-z-point-pp;PACKETA_PICKUP_POINT;HU;Packeta Z-POINT;;;5;;2.8;3.2;EUR;2;2;220000 HUF;220000 HUF;no
+packeta_pickup_point:HU:packeta-z-point-pp;PACKETA_PICKUP_POINT;HU;Packeta Z-POINT;;;10;;5.72;6.12;EUR;2;2;220000 HUF;220000 HUF;no
+packeta_pickup_point:HU:packeta-z-point-pp;PACKETA_PICKUP_POINT;HU;Packeta Z-POINT;;;15;;6.22;6.62;EUR;2;2;220000 HUF;220000 HUF;no
+packeta_box:SK:packeta-z-box-pp;PACKETA_BOX;SK;Packeta Z-BOX;;;5;;2.3;2.7;EUR;1;1;700 EUR;700 EUR;no
+packeta_box:SK:packeta-z-box-pp;PACKETA_BOX;SK;Packeta Z-BOX;;;10;;3.8;4.2;EUR;1;1;700 EUR;700 EUR;no
+packeta_box:SK:packeta-z-box-pp;PACKETA_BOX;SK;Packeta Z-BOX;;;15;;4.3;4.7;EUR;1;1;700 EUR;700 EUR;no
+packeta_box:CZ:packeta-z-box-pp;PACKETA_BOX;CZ;Packeta Z-BOX;;;5;;2.8;3.2;EUR;1;1;20000 CZK;20000 CZK;no
+packeta_box:CZ:packeta-z-box-pp;PACKETA_BOX;CZ;Packeta Z-BOX;;;10;;5.72;6.12;EUR;1;1;20000 CZK;20000 CZK;no
+packeta_box:CZ:packeta-z-box-pp;PACKETA_BOX;CZ;Packeta Z-BOX;;;15;;6.22;6.62;EUR;1;1;20000 CZK;20000 CZK;no
+packeta_box:RO:packeta-z-box-pp;PACKETA_BOX;RO;Packeta Z-BOX;;;5;;3.3;3.7;EUR;2;2;3500 RON;3500 RON;no
+packeta_box:RO:packeta-z-box-pp;PACKETA_BOX;RO;Packeta Z-BOX;;;10;;6.22;6.62;EUR;2;2;3500 RON;3500 RON;no
+packeta_box:RO:packeta-z-box-pp;PACKETA_BOX;RO;Packeta Z-BOX;;;15;;6.72;7.12;EUR;2;2;3500 RON;3500 RON;no
+partner_pickup_point:BE:7910;PARTNER_PICKUP_POINT;BE;Belgická pošta;7910;;1;;10.93;11.33;EUR;3;4;not offered;700 EUR;no
+partner_pickup_point:BE:7910;PARTNER_PICKUP_POINT;BE;Belgická pošta;7910;;2;;11.05;11.45;EUR;3;4;not offered;700 EUR;no
+partner_pickup_point:BE:7910;PARTNER_PICKUP_POINT;BE;Belgická pošta;7910;;5;;11.45;11.85;EUR;3;4;not offered;700 EUR;no
+partner_pickup_point:BE:7910;PARTNER_PICKUP_POINT;BE;Belgická pošta;7910;;10;;12.85;13.25;EUR;3;4;not offered;700 EUR;no
+partner_pickup_point:BE:7910;PARTNER_PICKUP_POINT;BE;Belgická pošta;7910;;15;;13.55;13.95;EUR;3;4;not offered;700 EUR;no
+partner_pickup_point:FR:12889;PARTNER_PICKUP_POINT;FR;Mondial Relay;12889;;1;;6.5;6.9;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:FR:12889;PARTNER_PICKUP_POINT;FR;Mondial Relay;12889;;2;;7.24;7.64;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:FR:12889;PARTNER_PICKUP_POINT;FR;Mondial Relay;12889;;5;;8.34;8.74;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:FR:12889;PARTNER_PICKUP_POINT;FR;Mondial Relay;12889;;10;;11.62;12.02;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:FR:12889;PARTNER_PICKUP_POINT;FR;Mondial Relay;12889;;15;;14.15;14.55;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:HR:10619;PARTNER_PICKUP_POINT;HR;Overseas Express;10619;;1;;4.19;4.59;EUR;3;4;700 EUR;700 EUR;no
+partner_pickup_point:HR:10619;PARTNER_PICKUP_POINT;HR;Overseas Express;10619;;2;;4.59;4.99;EUR;3;4;700 EUR;700 EUR;no
+partner_pickup_point:HR:10619;PARTNER_PICKUP_POINT;HR;Overseas Express;10619;;5;;5.14;5.54;EUR;3;4;700 EUR;700 EUR;no
+partner_pickup_point:HR:10619;PARTNER_PICKUP_POINT;HR;Overseas Express;10619;;10;;6.59;6.99;EUR;3;4;700 EUR;700 EUR;no
+partner_pickup_point:HR:10619;PARTNER_PICKUP_POINT;HR;Overseas Express;10619;;15;;7.29;7.69;EUR;3;4;700 EUR;700 EUR;no
+partner_pickup_point:DE:6828;PARTNER_PICKUP_POINT;DE;Hermes;6828;;1;;5.65;6.05;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:DE:6828;PARTNER_PICKUP_POINT;DE;Hermes;6828;;2;;5.75;6.15;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:DE:6828;PARTNER_PICKUP_POINT;DE;Hermes;6828;;5;;6.35;6.75;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:DE:6828;PARTNER_PICKUP_POINT;DE;Hermes;6828;;10;;8.2;8.6;EUR;4;4;not offered;700 EUR;no
+partner_pickup_point:DE:6828;PARTNER_PICKUP_POINT;DE;Hermes;6828;;15;;9.95;10.35;EUR;4;4;not offered;700 EUR;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;1;A;3.45;3.85;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;1;B;3.55;3.95;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;1;C;4.75;5.15;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;2;A;3.75;4.15;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;2;B;3.85;4.25;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;2;C;4.95;5.35;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;5;A;4.55;4.95;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;5;B;4.65;5.05;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;5;C;5.75;6.15;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;10;A;6.4;6.8;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;10;B;6.7;7.1;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;10;C;6.8;7.2;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;15;A;8.25;8.65;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;15;B;8.3;8.7;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:BG:26067;PARTNER_BOX;BG;Sameday;26067;;15;C;8.35;8.75;EUR;3;3;1400 BGN;1400 BGN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;5;A;4;4.4;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;5;B;5;5.4;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;5;C;5.1;5.5;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;10;A;5.55;5.95;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;10;B;5.6;6;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;10;C;5.65;6.05;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;15;A;5.7;6.1;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;15;B;5.75;6.15;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:PL:3060;PARTNER_BOX;PL;InPost Paczkomaty;3060;;15;C;5.8;6.2;EUR;2;2;3000 PLN;3000 PLN;no
+partner_box:HU:32970;PARTNER_BOX;HU;FoxPost;32970;;5;;2.8;3.2;EUR;2;3;220000 HUF;220000 HUF;no
+partner_box:HU:32970;PARTNER_BOX;HU;FoxPost;32970;;10;;5.72;6.12;EUR;2;3;220000 HUF;220000 HUF;no
+partner_box:HU:32970;PARTNER_BOX;HU;FoxPost;32970;;15;;6.22;6.62;EUR;2;3;220000 HUF;220000 HUF;no
+partner_box:GR:20409;PARTNER_BOX;GR;BoxNow;20409;;5;;4.4;4.8;EUR;4;4;400 EUR;700 EUR;no
+partner_box:GR:20409;PARTNER_BOX;GR;BoxNow;20409;;10;;4.5;4.9;EUR;4;4;400 EUR;700 EUR;no
+partner_box:GR:20409;PARTNER_BOX;GR;BoxNow;20409;;15;;4.55;4.95;EUR;4;4;400 EUR;700 EUR;no
