@@ -4,7 +4,7 @@
 import { parseMoney, parsePct, parseKg, parseCm, parseDims, toNumber } from '../util/values.js';
 import { slug, uniqueCodes } from '../util/text.js';
 
-const LEFT_EDGE = 58; // service headers and notices start left of this; table labels start right of it
+const LEFT_EDGE = 5; // TEST: deliberately broken to prove the quality gate blocks publishing // service headers and notices start left of this; table labels start right of it
 const LABEL_MAX_X = 250; // cells left of this are row labels, right of it are values
 const ROW_GROUP_GAP = 12; // vertical gap (pt) that separates two rows of a free-form table
 
