@@ -95,9 +95,12 @@ for (const def of sources) {
   });
 }
 
+index.sliceSchema = 'schema/slice.schema.json';
 write(join(v1, 'index.json'), index);
 mkdirSync(join(v1, 'schema'), { recursive: true });
-copyFileSync(new URL('../schema/pricelist.schema.json', import.meta.url), join(v1, 'schema', 'pricelist.schema.json'));
+for (const name of ['pricelist.schema.json', 'slice.schema.json']) {
+  copyFileSync(new URL(`../schema/${name}`, import.meta.url), join(v1, 'schema', name));
+}
 write(join(values.out, 'index.html'), landingPage(index));
 write(join(values.out, '.nojekyll'), '');
 console.log(`Built ${values.out}/ for ${index.sources.map((s) => `${s.id} (valid ${s.latest.validFrom})`).join(', ') || 'no sources'}`);

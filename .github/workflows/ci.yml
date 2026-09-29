@@ -22,5 +22,7 @@ jobs:
       - run: npm test
       - name: Stored price lists pass the quality checks
         run: for f in data/*/pricelists/*.json; do node bin/cli.js validate "$f"; done
-      - name: API builds
-        run: node scripts/build-api.js --out dist
+      - name: API builds and is consistent
+        run: |
+          node scripts/build-api.js --out dist
+          node scripts/check-published.js dist

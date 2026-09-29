@@ -18,9 +18,12 @@ A free static API (GitHub Pages, CORS enabled, no key, no rate limit beyond GitH
 | `sk/2026-09-01.json` | Any archived version, by valid-from date |
 | `sk/home/DE.json` | Small slice: one delivery mode, one destination country |
 | `sk/latest.csv`, `sk/latest-excel.csv` | One row per service and weight band (`-excel` = `;` and decimal commas for SK/CZ Excel) |
-| `schema/pricelist.schema.json` | The data format (JSON Schema) |
+| `schema/pricelist.schema.json` | The format of the full price list (JSON Schema) |
+| `schema/slice.schema.json` | The format of a per-country slice |
 
 Delivery modes in the slice paths: `home`, `packeta-pickup-point` (Z-POINT), `packeta-box` (Z-BOX), `partner-pickup-point`, `partner-box`.
+
+A **slice** holds `source`, `surcharges` and the `services` of that one mode and country — everything needed to price a parcel, in a few kilobytes. Returns, general fees and penalties live only in the full price list.
 
 ### Example
 

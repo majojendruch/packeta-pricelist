@@ -42,8 +42,17 @@ const report = ({ errors, warnings }) => {
   for (const e of errors) console.error(`ERROR: ${e}`);
 };
 
+try {
+  await run();
+} catch (err) {
+  console.error(`Failed: ${err.message}`);
+  process.exit(1);
+}
+
+async function run() {
 if (command === 'parse') {
   const pdf = readFileSync(file);
+  if (pdf.subarray(0, 5).toString('latin1') !== '%PDF-') throw new Error(`${file} is not a PDF file`);
   const sha256 = createHash('sha256').update(pdf).digest('hex');
   const priceList = await parse(pdf, { source: values.source, meta: { sha256 } });
   const result = validatePriceList(priceList, { previous: values.previous && readJson(values.previous) });
@@ -65,4 +74,5 @@ if (command === 'parse') {
 } else {
   console.error(`Unknown command "${command}"\n\n${HELP}`);
   process.exit(1);
+}
 }

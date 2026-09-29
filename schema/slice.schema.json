@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://majojendruch.github.io/packeta-pricelist/v1/schema/slice.schema.json",
+  "title": "PriceList slice v1",
+  "description": "One delivery mode and one destination country (e.g. sk/home/DE.json): the services plus everything needed to price them. Returns, general fees and penalties are only in the full price list.",
+  "type": "object",
+  "required": ["schemaVersion", "source", "surcharges", "services"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "source": { "$ref": "https://majojendruch.github.io/packeta-pricelist/v1/schema/pricelist.schema.json#/properties/source" },
+    "surcharges": { "$ref": "https://majojendruch.github.io/packeta-pricelist/v1/schema/pricelist.schema.json#/properties/surcharges" },
+    "services": {
+      "type": "array",
+      "minItems": 1,
+      "items": { "$ref": "https://majojendruch.github.io/packeta-pricelist/v1/schema/pricelist.schema.json#/$defs/service" }
+    }
+  }
+}

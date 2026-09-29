@@ -4,9 +4,19 @@
 import { readFileSync } from 'node:fs';
 import Ajv2020 from 'ajv/dist/2020.js';
 
-const schema = JSON.parse(readFileSync(new URL('../../schema/pricelist.schema.json', import.meta.url), 'utf8'));
+const read = (name) => JSON.parse(readFileSync(new URL(`../../schema/${name}`, import.meta.url), 'utf8'));
+const schema = read('pricelist.schema.json');
+const sliceSchema = read('slice.schema.json');
 const ajv = new Ajv2020({ allErrors: true, strict: false, validateFormats: false });
+ajv.addSchema(schema);
 const validateSchema = ajv.compile(schema);
+const validateSliceSchema = ajv.compile(sliceSchema);
+
+/** Checks a per-country slice (sk/home/DE.json) against the slice format. */
+export function validateSlice(slice) {
+  const errors = validateSliceSchema(slice) ? [] : validateSliceSchema.errors.map((e) => `schema: ${e.instancePath || '/'} ${e.message}`);
+  return { valid: errors.length === 0, errors, warnings: [] };
+}
 
 // Losing more than 10 % AND more than 2 services in one mode usually means the parser broke.
 // Smaller losses are real (Packeta dropped the HU Z-BOX between 2/2026 and 9/2026) and show in the change report.

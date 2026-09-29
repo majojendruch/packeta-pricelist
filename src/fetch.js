@@ -27,10 +27,22 @@ export async function headFile(url) {
   };
 }
 
-/** Downloads a file: { bytes, sha256 } */
-export async function downloadFile(url) {
-  const bytes = Buffer.from(await (await request(url)).arrayBuffer());
+/**
+ * Downloads a file: { bytes, sha256 }.
+ * A short read is rejected: a truncated PDF can still parse and would publish half a price list.
+ */
+export async function downloadFile(url, expectedSize = null) {
+  const res = await request(url);
+  const promised = Number(res.headers.get('content-length')) || expectedSize;
+  const bytes = Buffer.from(await res.arrayBuffer());
+  assertCompletePdf(bytes, promised, url);
   return { bytes, sha256: createHash('sha256').update(bytes).digest('hex') };
+}
+
+/** Rejects a short read or a file that is not a PDF. */
+export function assertCompletePdf(bytes, promisedSize, url) {
+  if (promisedSize && bytes.length !== promisedSize) throw new Error(`incomplete download of ${url}: got ${bytes.length} of ${promisedSize} bytes`);
+  if (bytes.subarray(0, 5).toString('latin1') !== '%PDF-') throw new Error(`${url} is not a PDF`);
 }
 
 /**

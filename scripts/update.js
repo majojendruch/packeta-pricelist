@@ -95,7 +95,7 @@ async function updateSource(def) {
   } else {
     head = await discoverPdf(def.discovery, html);
     const sameStamp = state.pdf && head.url === state.pdf.url && head.etag === state.pdf.etag && head.size === state.pdf.size;
-    if (!sameStamp) ({ bytes, sha256 } = await downloadFile(head.url));
+    if (!sameStamp) ({ bytes, sha256 } = await downloadFile(head.url, head.size));
   }
 
   if (bytes && sha256 !== state.pdf?.sha256) {

@@ -30,7 +30,7 @@ jobs:
       - run: npm ci
       - run: node scripts/build-api.js --out dist
       - name: Check the published files
-        run: for f in dist/v1/*/latest.json; do node bin/cli.js validate "$f"; done
+        run: node scripts/check-published.js dist
       - uses: actions/configure-pages@45bfe0192ca1faeb007ade9deae92b16b8254a0d # v6.0.0
       - uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:
