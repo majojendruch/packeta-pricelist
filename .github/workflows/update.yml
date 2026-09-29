@@ -30,7 +30,7 @@ jobs:
 
       - name: Check sources and parse
         id: update
-        run: node scripts/update.js --report update-report.md
+        run: node scripts/update.js --report update-report.md --failure-report update-failures.md
 
       - name: Open pull request with the new prices
         if: steps.update.outputs.changed == 'true'
@@ -48,12 +48,12 @@ jobs:
         if: steps.update.outputs.failed == 'true'
         env:
           GH_TOKEN: ${{ github.token }}
-          TITLE: ${{ steps.update.outputs.title }}
+          TITLE: ${{ steps.update.outputs.failure_title }}
         run: |
           gh label create update-failed --color B60205 --description "Automatic price list update failed" --force
           open=$(gh issue list --label update-failed --state open --json number --jq '.[0].number')
           if [ -n "$open" ]; then
-            gh issue comment "$open" --body-file update-report.md
+            gh issue comment "$open" --body-file update-failures.md
           else
-            gh issue create --title "$TITLE" --label update-failed --body-file update-report.md
+            gh issue create --title "$TITLE" --label update-failed --body-file update-failures.md
           fi
