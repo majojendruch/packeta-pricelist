@@ -11,7 +11,7 @@ import { createHash } from 'node:crypto';
 import { dirname } from 'node:path';
 import { parseArgs } from 'node:util';
 import { parse, validatePriceList, sources, getSource } from '../src/index.js';
-import { getText, discoverPdf, downloadFile, readFuel } from '../src/fetch.js';
+import { getText, discoverPdf, downloadFile, isOlderThanKnown, readFuel } from '../src/fetch.js';
 import { diffPriceLists, diffToMarkdown } from '../src/diff.js';
 import { Store } from '../src/store.js';
 
@@ -94,8 +94,12 @@ async function updateSource(def) {
     sha256 = createHash('sha256').update(bytes).digest('hex');
   } else {
     head = await discoverPdf(def.discovery, html);
-    const sameStamp = state.pdf && head.url === state.pdf.url && head.etag === state.pdf.etag && head.size === state.pdf.size;
-    if (!sameStamp) ({ bytes, sha256 } = await downloadFile(head.url, head.size));
+    if (isOlderThanKnown(head, state.pdf)) {
+      console.log(`${name}: the pricing page only links an older price list (${head.url}); keeping the one we have.`);
+      head = null;
+    }
+    const sameStamp = state.pdf && head?.url === state.pdf.url && head.etag === state.pdf.etag && head.size === state.pdf.size;
+    if (head && !sameStamp) ({ bytes, sha256 } = await downloadFile(head.url, head.size));
   }
 
   if (bytes && sha256 !== state.pdf?.sha256) {

@@ -9,11 +9,11 @@ export const sources = [
     publisher: 'Packeta Slovakia s.r.o.',
     currency: 'EUR',
     profile: sk,
-    // The pricing page links an old and a current SK list; the newest file is the current one.
+    // The pricing page links old and current SK lists, under changing file names; the newest file is the current one.
     discovery: {
       type: 'newest-linked',
       page: 'https://www.packeta.sk/cenniky-a-priplatky',
-      link: /https:\/\/files\.packeta\.com\/web\/files\/Kompletny_cennik_sluzieb(?:_sk)?\.pdf/g,
+      link: /https:\/\/files\.packeta\.com\/web\/files\/(?:Kompletny_cennik_sluzieb(?:_sk)?|SK_Cennik_dorucovania_Packeta_Slovakia_od_\d{1,2}_\d{1,2}_\d{4})\.pdf/g,
     },
     // "Palivový príplatok pre cestnú prepravu platný od 1.9.2026 je 18,5%."
     fuel: {

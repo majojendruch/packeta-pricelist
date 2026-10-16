@@ -1,6 +1,6 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { assertCompletePdf, readFuel, userAgent } from '../src/fetch.js';
+import { assertCompletePdf, isOlderThanKnown, readFuel, userAgent } from '../src/fetch.js';
 import sk from '../src/i18n/sk.js';
 import { getSource } from '../src/sources/registry.js';
 
@@ -41,4 +41,23 @@ test('source profile and registry line up', () => {
   assert.equal(s.profile, sk);
   assert.equal(s.currency, 'EUR');
   assert.match('https://files.packeta.com/web/files/Kompletny_cennik_sluzieb.pdf', s.discovery.link);
+});
+
+test('the SK link pattern finds the old and the new file names', () => {
+  const html = `
+    <a href="https://files.packeta.com/web/files/Kompletny_cennik_sluzieb_sk.pdf">old</a>
+    <a href="https://files.packeta.com/web/files/SK_Cennik_dorucovania_Packeta_Slovakia_od_12_10_2026.pdf">new</a>
+    <a href="https://files.packeta.com/web/files/SK_Zasady_ochrany_osobnych_udajov.pdf">privacy</a>`;
+  assert.deepEqual(html.match(getSource('sk').discovery.link), [
+    'https://files.packeta.com/web/files/Kompletny_cennik_sluzieb_sk.pdf',
+    'https://files.packeta.com/web/files/SK_Cennik_dorucovania_Packeta_Slovakia_od_12_10_2026.pdf',
+  ]);
+});
+
+test('a linked file older than the one we hold is "nothing new"', () => {
+  const known = { lastModified: 'Wed, 07 Oct 2026 10:57:09 GMT' };
+  assert.equal(isOlderThanKnown({ lastModified: 'Thu, 12 Feb 2026 11:49:35 GMT' }, known), true);
+  assert.equal(isOlderThanKnown({ lastModified: 'Thu, 08 Oct 2026 08:00:00 GMT' }, known), false);
+  assert.equal(isOlderThanKnown({ lastModified: null }, known), false); // unknown date: check as usual
+  assert.equal(isOlderThanKnown({ lastModified: 'Thu, 12 Feb 2026 11:49:35 GMT' }, undefined), false); // first run
 });

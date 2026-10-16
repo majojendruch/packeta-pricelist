@@ -59,6 +59,15 @@ export async function discoverPdf(discovery, pageHtml) {
 }
 
 /**
+ * True when the linked file is older than the one we already hold. A pricing page can link only
+ * an outdated file for a while; that is "nothing new", not a failed price list.
+ */
+export function isOlderThanKnown(head, knownPdf) {
+  if (!head?.lastModified || !knownPdf?.lastModified) return false;
+  return Date.parse(head.lastModified) < Date.parse(knownPdf.lastModified);
+}
+
+/**
  * Reads the current fuel surcharge from the pricing page.
  * @param {string} html
  * @param {{ url: string, pattern: RegExp }} fuel pattern groups: day, month, year, percent
